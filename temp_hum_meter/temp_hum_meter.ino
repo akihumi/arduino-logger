@@ -43,7 +43,7 @@ void setup(){
 }
 void senddata(float temp, float hum){
   if(client.connect("housedata.herokuapp.com", 80)){
-    client.print("GET /Afjfm3FidQuiro9K3fm2JmU?temp=");
+    client.print("GET /senddatastatus?temp=");
     client.print(temp);
     client.print("&hum=");
     client.print(hum);
